@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta name="Author" content="Pixel Projects" />
+        <meta name="description" content="Студия по созданию инди-игр"/>
+        <meta name="keywords" content="Indie-games, Pixel Projects, pixel games, russian games, kazakh games"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="src/favicon.ico" sizes="any">
+        <link rel="stylesheet" href="styles/styleLogin.css"/>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <script src="Scripts/LoginScrypt.js"></script>
+        <title>Вход</title>
+    </head>
+
+    <body>
+        <section>
+            <div class="layout"></div>
+            <div class="box">
+                <div class="square" style="--i:0;"></div>
+                <div class="square" style="--i:1;"></div>
+                <div class="square" style="--i:2;"></div>
+                <div class="square" style="--i:3;"></div>
+                <div class="square" style="--i:4;"></div>
+                <div class="container">
+                    <div class="form">
+                        <h2>Логин</h2>
+                        <form>
+                            <div class="inputBox">
+                                <input type="text" placeholder="Почта">
+                            </div>
+                            <div class="inputBox">
+                                <input type="password" placeholder="Пароль">
+                            </div>
+                            <div class="inputBox captcha">
+                                <label for="captcha-input">Введите капчу</label>
+                                <div class="preview">
+                                    <p id="captcha-task"></p>
+                                </div>
+                                <input type="text" id="captcha-input" placeholder="Введите значение капчи" required>
+                                <button onclick="changeCaptcha()">
+                                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                                </button>
+                                <br>
+                                <button id="captcha-protected">Кнопка заработает, когда будет решена капча</button>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="Войти">
+                            </div>
+                            <div class="inputBox" onclick="login()">
+                                <input type="button" value="Вход администратора">
+                            </div>
+                            <p class="forget">Забыли пароль? <a href="#">Перейти</a></p>
+                            <p class="forget">Ещё нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta name="Author" content="Pixel Projects" />
+        <meta name="description" content="Студия по созданию инди-игр"/>
+        <meta name="keywords" content="Indie-games, Pixel Projects, pixel games, russian games, kazakh games"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="src/favicon.ico" sizes="any">
+        <link rel="stylesheet" href="styles/styleCart.css"/>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+        <script src="Scripts/Cart2.js"></script>
+        <title>Корзина</title>
+
+        <style>
+            .content {max-width: 1500px; margin: auto;}
+            .main_div {text-align: center; position: relative; height: 200px; width: 900px;}
+            .sub_div {position: relative; bottom: 20px;}
+            p {
+                overflow-wrap: break-word;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="filters">
+            <fieldset>
+              <legend>Фильтры</legend>
+              Цена: не меньше <input type="number" id="filter-lower"> и не больше чем <input type="number" name="" id="filter-higher">
+              <br>
+              Сортировка: <button onclick="switchSort()" id="sortBtn">Нет</button>
+              <br>
+              <button onclick="showCurrentThree()">Применить</button>
+            </fieldset>
+          </section>
+      
+          <section class="items-carousel-container">
+            <button class="prev">&lt;</button>
+            <div class="items-carousel">
+                <div class="card">
+                    <p class="card-img-placeholder"> <!--<img src="src/Raid_Road_0.png"> --></p>
+                    <h2><p class="game1" style="color: rgb(203, 0, 0);">RAID</b><b style="color: rgb(0, 0, 118);"> R<b style="color:rgb(180, 180, 180) ;">O</b>AD</b></p></h2>
+                    <p>Приключенческий инди-слешер о судьбе молодого парня по имени Рейд</p>
+                    <button onclick="cart.add('Raid Road')">Купить / 10$</button>
+                </div>
+
+                <div class="card">
+                    <p class="card-img-placeholder"> <!--<img src="https://static.wikia.nocookie.net/heartbound/images/f/fc/Animus_Wallpaper.png/revision/latest/scale-to-width-down/1000?cb=20190122015121">--> </p>
+                    <h2><p class="game2">По ту сторону границы</p></h2>
+                    <p>Квест молодого агента КГБ в далёком богом-забытом Златовске</p>
+                    <button onclick="cart.add('По ту сторону границы')">Купить / 40$</button>
+                </div>
+
+                <div class="card">
+                    <p class="card-img-placeholder"><!--<img src="src/maxresdefault.jpg">--> </p>
+                    <h2><p class="game3">Культурная столица - Ленинград</p></h2>
+                    <p>Экшн-адвентчура в открытом мире изменившегося до неузнаваемости города Ленинград</p>
+                    <button onclick="cart.add('Культурная столица - Ленинград')">Купить / 70$</button>
+                </div>
+            </div>
+            <button class="next">&gt;</button>
+          </section>
+          
+          <section id="cart-container">
+            <h2>Корзина</h2>
+      
+          </section>
+
+          <section class="top-notifications">
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <div class="sec aboutus">
+            <h2>О нас</h2>
+            <p>Студия разработки пиксельных инди-игр, с огромным потенциалом в ближайшем будущем</p>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://vk.com/club158900805"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/@pixelprojects9835"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Подробности</h2>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="form.html">Связаться с нами</a></li>
+                <li><a href="login.html">Войти в аккаунт</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Продукты</h2>
+            <ul>
+                <li><a href="Products/Raid_Road.html">Raid Road</a></li>
+                <li><a href="Products/On_the_other_Countryside.html">По ту сторону границы</a></li>
+                <li><a href="Products/Cultur_Capital_Leningrad.html">Культурная столица - Ленинград</a></li>
+                <li><a href="Products/Cart.html">Корзина</a></li>
+            </ul>
+        </div>
+        <div class="sec footer-contact">
+            <h2>Связаться с нами</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p>Номер телефона главного директора <a href="tel:89398508116">8(939)-850-81-16</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                    <p>Почта главного директора <a href="bratanizuoy@gmail.com">bratanizuoy@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>Copyright © «Pixel Projects»</p>
+    </div>
+</footer>
+  </body>
+</html>
